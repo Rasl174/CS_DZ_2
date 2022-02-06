@@ -11,18 +11,18 @@ namespace CS_DZ_2
         static void Main(string[] args)
         {
             int myGold;
-            int cristalCount;
-            int priseOfCrislals = 10;
+            int cristalsCount;
+            int priceOfCrislal = 10;
 
-            Console.WriteLine("Приветстыую вас в магазине кристаллов! Цена за один кристалл - " + priseOfCrislals + " золота");
+            Console.WriteLine("Приветстыую вас в магазине кристаллов! Цена за один кристалл - " + priceOfCrislal + " золота");
             Console.Write("Сколько у вас золота? ");
             myGold = Convert.ToInt32(Console.ReadLine());
             Console.Write("Сколько кристаллов вы хотите купить? ");
-            cristalCount = Convert.ToInt32(Console.ReadLine());
+            cristalsCount = Convert.ToInt32(Console.ReadLine());
 
-            myGold -= cristalCount * priseOfCrislals;
+            myGold -= cristalsCount * priceOfCrislal;
 
-            Console.WriteLine("Вы приобрели " + cristalCount + " кристаллов. У вас осталось " + myGold + " золота.");
+            Console.WriteLine("Вы приобрели " + cristalsCount + " кристаллов. У вас осталось " + myGold + " золота.");
         }
     }
 }
